@@ -1,0 +1,16 @@
+{
+  "index": "Introduction",
+  "about": {
+    "title": "About",
+    "type": "page"
+  },
+  "contact": {
+    "title": "Contact ↗",
+    "type": "page",
+    "href": "https://info.stormylinux@gmail.com",
+    "newWindow": true
+  },
+  "stormylinux-v1": "Stormy Linux v1.0",
+  "stormylinux-dev": "Stormy Linux Dev",
+  "stormylinux-pro": "Stormy Linux Pro"
+}
