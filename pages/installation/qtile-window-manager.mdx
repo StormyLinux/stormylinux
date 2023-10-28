@@ -1,0 +1,66 @@
+# Install Qtile
+
+## WM of choice
+
+Qtile is an extensive and hackable window manager written in the Python programming lanuguage.
+
+<div align="center">
+
+<img src="/qtile.png" />
+
+Qtile Window Manager
+
+</div>
+
+Let's install Qtile.
+
+You can copy and paste the code below into a bash script and execute it. You can also directly paste it into your terminal.
+
+```bash
+sudo apt update
+sudo apt install -y python3-cffi libpangocairo-1.0-0 --reinstall
+sudo apt install python3-full -y
+sudo apt install python3-pip -y
+
+# pip3 install xcffib==0.12.1 --break-system-packages
+pip3 install xcffib==0.12.1
+
+# pip3 install --no-cache-dir --no-build-isolation cairocffi==1.4.0 --break-system-packages
+pip3 install --no-cache-dir --no-build-isolation cairocffi==1.4.0
+
+# Install git if you don't have it installed
+sudo apt install git
+
+# pip3 install git+https://github.com/qtile/qtile --break-system-packages
+pip3 install git+https://github.com/qtile/qtile
+
+# Use apt if the above command does't work
+# sudo apt install qtile
+
+# You can also use pip like normal
+# pip3 install qtile
+
+echo "[Desktop Entry]
+Name=Qtile
+Comment=Qtile Session
+Exec=~/.local/bin/qtile start
+Type=Application
+Keywords=wm;tiling" | sudo tee /usr/share/xsessions/qtile.desktop
+
+echo "Qtile installation completed successfully. You can now logout and select Qtile from your session manager."
+
+```
+
+Make sure the `JetBrainsMono` Nerd Font is installed before logging into Qtile.
+
+After the installation, reboot your system and choose Qtile on your login screen.
+
+> The script above has been tested on Debian 12 x86_64, LMDE 5 (elsie) x86_64 and Ubuntu. If you run into any problems with the script, install everything line by line, if the xcffib and cairocffi packages fail to install, then add --break-system-packages at the end of the command and everything should work.
+
+Once you have rebooted your system and logged into qtile, you should see the default qtile screen like the example below.
+
+<div align="center">
+
+<img src="/stormylinux-home.png" />
+
+</div>

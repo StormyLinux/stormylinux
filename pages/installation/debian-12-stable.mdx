@@ -1,0 +1,33 @@
+# Debian-12-stable
+
+## Why Debian?
+
+Debian has been chosed for a number of different reasons, and based on its trajectory and its release cycles, it will remain the go-to solution for Stormy Linux. The other alternative is Stormy Linux Arch Edition(still under development).
+
+Here are some reasons why Debian is the distro of choice:
+
+1. **Stability:**
+   Debian is renowned for its stability. It has a thorough testing process, and packages are often well-vetted before being included in the stable release. This makes Debian a reliable choice, particularly for servers and mission-critical systems.
+
+2. **Extensive Package Repository:**
+   Debian provides access to an extensive repository of precompiled packages, covering a wide range of software. This makes it easy to install and update software without having to compile from source.
+
+3. **Security:**
+   Debian has a strong commitment to security. The Debian Security Team actively monitors for vulnerabilities and issues security updates promptly. This is crucial for systems that require a high level of security.
+
+4. **Community Support:**
+   Debian has a large and active community. If you encounter issues or have questions, you can find support through forums, mailing lists, and other community resources. The wealth of knowledge in the Debian community is a valuable asset.
+
+5. **Flexibility:**
+   Debian provides different release branches, including Stable, Testing, and Unstable. This allows users to choose a balance between stability and access to newer software based on their specific needs.
+
+6. **Free and Open Source:**
+   Debian strictly adheres to the principles of free software. All the software in the main repository is free and open source, promoting transparency and user freedom.
+
+7. **Wide Range of Architectures:**
+   Debian supports a broad range of hardware architectures, making it suitable for various types of systems, including servers, desktops, and embedded devices.
+
+8. **Systemd Integration:**
+   Debian has integrated systemd as its default init system, providing modern init and system management features.
+
+When Debian 12 is released, you might also want to consider any new features, improvements, or updates introduced in that specific version. Always check the release notes and documentation for the latest information tailored to the version you are interested in.
