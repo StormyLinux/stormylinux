@@ -4,7 +4,7 @@
 
 The status bar used in **Stormy Linux Developer Edition** is the default Qtile status bar. Built in widgets are what is being leveraged in combination with the JetBrainsMono Nerd Font to display the icons. All system processes that are being used in the status bar are default widgets pulled from qtile.
 
-> Note: Qtile Extras are being used in a pop-up menu with three main purposes, **logout**, **reboot** and **shutdown**.
+> **Note**: A package called **Qtile Extras** is being used in a pop-up menu with the purposes of performing three tasks, **logout**, **reboot** and **shutdown**.
 
 ## The Menu
 
@@ -42,26 +42,23 @@ Active workspaces have a green highlighted icon when an application is active in
 **Inactive**
 
 These are the workspaces with no activity, these are the icons that are hidden, and can be accessed by navigating to them.
-{/* 
-## Auto Assign Applications
 
-A selected few applications have been chosen to be auto-assigned to specific workspaces. As the workspaces' icons indicates an icon that corresponds with specifc applications, these applications will automatically open in their selected workspaces.
+### Indicators
 
-You can find the applications below that have been configured to open on specific workspaces...
+The status bar offers a variety of features. We have the **Stormy Linux** logo on the top left corner that will bring up the rofi menu once clicked. Next to that we have a seperator followed by a layout indicator, this indicator displays the current layout of windows. We then have the window count, which shows the a number of how many windows are currently open. Following that is the task list, which displays opened windows in the current workspace.
 
-|       Workspace        |       Application                       |
-|------------------------|-----------------------------------------|
-| Home                   | `Greeting Screen`                       |
-| VIM                    | `VIM Text Editor`                       |
-| Workspace 1            | `VSCode`, `Sublime-Text`                |
-| Workspace 2            | `Chrome`, `Brave`, `Firefox`            |
-| Workspace 3            | `Terminator`                            |
-| Workspace 4            | `Cypress`                               |
-| Workspace 5            | `GitHub Desktop`                        |
-| Workspace 6            | `GIMP`, `Lunacy`                        |
-| Workspace 7            | `Kitty`, `Alacritty`                    |
-| Workspace 8            | `Caja`, `Thunar`, `Ranger`, `Krusader`  |
-| Workspace 9            | `Obsidian`, `Notion`                    |
-| Workspace 10           | `Thunderbird`                           |
-| Workspace 11           | `System Settings`                       |
-| Workspace 12           | `PPSSPP`, `Wine`, `PlayOnLinux`         | */}
+We now have the indicators, see below...
+
+1. **WiFi** - Indicates upload and download.
+2. **Volume** - A colume level indicator.
+3. **CPU** - Indicates CPU usage.
+3. **Thermals** - Shows heat level of CPU.
+4. **This space is reserved for the battery icon(coming soon)**.
+5. **RAM** - Shows RAM usage.
+6. **Date** - Displays current date.
+7. **Time** - Shows current time. 
+
+### System Tray
+
+1. **Active Monitor** - This indicates which monitor is active and which is inactive.
+2. **Application Icons** - These are icons that appear next to the monitor icon whenever an application is open that is sent to the system tray, eg, VLC.

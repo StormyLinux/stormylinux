@@ -1,3 +1,7 @@
+import Image from "next/image"
+import stormyimage from "/assets/dev/developer-edition.png"
+import qtile from "/assets/qtile.png"
+
 # Install Qtile
 
 ## WM of choice
@@ -6,7 +10,8 @@ Qtile is an extensive and hackable window manager written in the Python programm
 
 <div align="center">
 
-<img src="/qtile.png" />
+<Image src={qtile} alt="stormylinux image"/>
+
 
 Qtile Window Manager
 
@@ -50,17 +55,18 @@ Keywords=wm;tiling" | sudo tee /usr/share/xsessions/qtile.desktop
 echo "Qtile installation completed successfully. You can now logout and select Qtile from your session manager."
 
 ```
+> The script above has been tested on Debian 12 x86_64, LMDE 5 (elsie) x86_64 and Ubuntu. If you run into any problems with the script, install everything line by line, if the xcffib and cairocffi packages fail to install, then add --break-system-packages at the end of the command and everything should work.
 
 Make sure the `JetBrainsMono` Nerd Font is installed before logging into Qtile.
 
 After the installation, reboot your system and choose Qtile on your login screen.
 
-> The script above has been tested on Debian 12 x86_64, LMDE 5 (elsie) x86_64 and Ubuntu. If you run into any problems with the script, install everything line by line, if the xcffib and cairocffi packages fail to install, then add --break-system-packages at the end of the command and everything should work.
+Once logged into qtile, make a backup of the `~/.config/qtile` directory and replace the `qtile` directory located in `~/.config` with the `qtile` **Stormy Linux** `qtile` configuration. You can now reboot your system.
 
-Once you have rebooted your system and logged into qtile, you should see the default qtile screen like the example below.
+Once you have rebooted your system and logged into qtile, you should see the default qtile screen like the example below, assuming the installation worked.
 
 <div align="center">
 
-<img src="/stormylinux-home.png" />
+<Image src={stormyimage} alt="stormylinux image"/>
 
 </div>
