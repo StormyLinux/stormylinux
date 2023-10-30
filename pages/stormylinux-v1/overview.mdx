@@ -1,11 +1,260 @@
 import { Tab, Tabs } from "nextra-theme-docs";
 
+import Image from "next/image";
+
+import stormylinuxbar from "/assets/v1/stormylinux-bar.png"
+import stormylinuxhome from "/assets/v1/stormylinux-v1.png"
+import stormylinuxwsicons from "/assets/v1/stormylinux-ws-icons.png"
+import stormylinuxlayoutindicator from "/assets/v1/layout-indicator.png"
+import capsnum from "/assets/v1/capsnum.png"
+import pomo from "/assets/v1/pomo.png"
+import widgets from "/assets/v1/widgets.png"
+import lrs from "/assets/v1/lrs.png"
+
 # Overview v1.0
 
-## Stormy Linux v1.0
+A quick overview.
 
-### Welcome!
+## Stormy Linux v1.0
 
 Stormy Linux v1.0 has been archived and will no longer recive updates. This configuration can still be used as a daily driver and primary configuration.
 
 > Note: This configuration can still be used and extended. It can be shaped into anything you would like it to be.
+
+### Example:
+
+<br />
+
+<Image src={stormylinuxhome} alt="SL Home v1" />
+
+<br />
+
+# v1.0 Status Bar
+
+Let's take a look at the v1.0 status bar of Stormy Linux.
+
+<br />
+
+<Image src={stormylinuxbar} alt="SL Bar v1" />
+
+<br />
+
+## Stormy Linux v1.0 Status Bar
+
+The status bar used by **Stormy Linux** the default bar of Qtile. All icons are being imported from the default collection of Qtile icons. Although, recently... **Stormy Linux** has been leveraging the "Qtile Extras" package, which includes extra modules and scripts that can be used to extend Qtile.
+
+## The Menu
+
+**Stormy Linux** uses rofi as its default menu, you can click the **Stormy Linux** logo at the far left corner in the status bar to access the rofi menu.
+
+## Workspace Icons
+
+The workspace icons aligned on the left side of the status bar after the Stormy Linux logo indicates what goes on which workspace, eg. `VSCode` goes on workspace 1, the `Vim` text editor is linked to `mod` + `F2` and the `Home` icon is where the welcome screen lives, and can be accessed using `mod` + `F1`. There are exactly `14` workspace icons for you to leverage. To know more about workspace icons  and how to access them, refer to the shortcut section that contains the [keybindings](/keybindings) you can use to switch workspaces.
+
+<br />
+
+<Image src={stormylinuxwsicons} alt="SL Icons v1" />
+
+<br />
+
+## Layout Indicator
+
+This icon changes as you use different layouts, by default it is in a `tiled` state, by a [keybinding](/keybindings) or clicking on the icon you can easily change the state of the layout.
+
+<br />
+
+<Image src={stormylinuxlayoutindicator} alt="SL Layout v1" />
+
+<br />
+
+## D-Menu
+
+To access the d-menu to spin up applications you want to use, it's as easy as using a specific [keybinding](/keybindings), by using `mod + r`, the d-menu will display next to the layout icon.
+
+## Caps and Numlock Indicators
+
+This indicator let's you know whether Caps Lock and Num Lock are on or off. 
+
+<Image src={capsnum} alt="SL Caps Num v1" />
+
+## Pomodoro
+
+By clicking on the Pomodoro indicator the time will start and will give you one pomodoro of 25 minutes. While the pomodoro counts down, you can click it again to pause or unpause. You can also perform a right click on the pomodoro to reset it. 
+
+<br />
+
+<Image src={pomo} alt="SL Pomodoro v1" />
+
+<br />
+
+## Window Name
+
+This section displays any current windows that you may have open on the selected workspace. The rectangle with the blue background is where open windows will be displayed on a selected workspace.
+
+## Widgets
+
+The widgets on the right side of the status bar after the window name indicate system processes. These widgets currently display system resource usages, these include `Network`, `CPU`, `RAM`, `Swap`, `Temperature`, `Volume` and `Date`
+
+<br />
+
+<Image src={widgets} alt="SL Widgets v1" />
+
+<br />
+
+## Logout, Reboot and Shutdown
+
+**Logout** - These icons each perform their own function. The `yellow` icon is used to perform the `logout` function, this will log you out of the system and will send you back to the login screen.
+
+<br />
+
+<Image src={lrs} alt="SL LRS v1" />
+
+<br />
+
+**Reboot** - The `reboot` icon is highlighted with an `orange` accent color, clicking on this icon will result in your system performing a reboot.
+
+**Shutdown** - Clicking the `shutdown` icon which is highlighted with a `red` accent color, will perform a full shutdown of your system.
+
+# Workspaces
+
+## Stormy Linux Workspaces
+
+Workspaces are displayed on the top left corner of the default Qtile bar next to the **Stormy Linux** logo. There are currently **14 workspaces** available by default. Workspaces are numbered from **1 to 14** with their icons.
+
+- Workspace Home: **Default** (Optional workspace for your apps)
+- Workspace Vim: **VIM** (Where you can do all your programming in VIM)
+- Workspace 1: **VSCode** (Any other IDE or text editor will do)
+- Workspace 2: **Browser**(Firefox, Brave, Chrome, etc.)
+- Workspace 3: **Development Server**(NPM, PNPM or BUN server)
+- Workspace 4: **Web App Testing and Debugging**(Cypress, Chai, Jest, etc)
+- Workspace 5: **GitHub**(WebUI or GitHub-Desktop)
+- Workspace 6: **UI/UX**(GIMP, Figma, Lunacy, etc.)
+- Workspace 7: **All purpose terminal**(Kitty, Terminator, Alacritty, Tilix, etch.)
+- Workspace 8: **File Explorers**(Krusader, Thunar, Ranger, etc.)
+- Workspace 9: **Notes**(Notion, Obsidian, etc.)
+- Workspace 10: **EMail**(Protonmail, Thunderbird, GMail, etc.)
+- Workspace 11: **Settings**(system settings, config file, etc.)
+- Workspace 12: **Games** (PC games of our choosing)
+
+## Workspace Colors
+
+**Active**
+
+Active workspaces have a green highlighted icon when an application is active in that workspace, when you select and navigate to that workspace it has an active background color of blue and an active foreground color of white.
+
+**Inactive**
+
+These are the workspaces with no activity, these are the icons that have a dark gray accent where there are no active applications.
+
+# Keybindings
+
+## Workspace Selection
+
+| Command                           | Description                        |
+|:---|:---|
+| `mod` + `F1`                      | Move to default home workspace     |
+| `mod` + `F2`                      | Move to VIM workspace              |
+| `mod` + `1`                       | Move to workspace 1                |
+| `mod` + `2`                       | Move to workspace 2                |
+| `mod` + `3`                       | Move to workspace 3                |
+| `mod` + `4`                       | Move to workspace 4                |
+| `mod` + `5`                       | Move to workspace 5                |
+| `mod` + `6`                       | Move to workspace 6                |
+| `mod` + `7`                       | Move to workspace 7                |
+| `mod` + `8`                       | Move to workspace 8                |
+| `mod` + `9`                       | Move to workspace 9                |
+| `mod` + `10`                      | Move to workspace 10               |
+| `mod` + `11`                      | Move to workspace 11               |
+| `mod` + `12`                      | Move to workspace 12               |
+
+## Move Apps to Workspaces
+
+| Command                            | Description                        |
+|:---|:---|
+| `mod` + `shift` + `F1`             | Move App to home workspace         |
+| `mod` + `shift` + `F2`             | Move App to VIM workspace          |
+| `mod` + `shift` + `1`              | Move App to workspace 1            |
+| `mod` + `shift` + `2`              | Move App to workspace 2            |
+| `mod` + `shift` + `3`              | Move App to workspace 3            |
+| `mod` + `shift` + `4`              | Move App to workspace 4            |
+| `mod` + `shift` + `5`              | Move App to workspace 5            |
+| `mod` + `shift` + `6`              | Move App to workspace 6            |
+| `mod` + `shift` + `7`              | Move App to workspace 7            |
+| `mod` + `shift` + `8`              | Move App to workspace 8            |
+| `mod` + `shift` + `9`              | Move App to workspace 9            |
+| `mod` + `shift` + `10`             | Move App to workspace 10           |
+| `mod` + `shift` + `11`             | Move App to workspace 11           |
+| `mod` + `shift` + `12`             | Move App to workspace 12           |
+
+## Applications
+
+| Command                           | Description                        |
+|:---|:---|
+| `mod` + `return`                  | Kitty Terminal                     |
+| `mod` + `shift` + `return`        | Alacritty Terminal                 |
+| `mod` + `Ctrl` + `return`         | Terminator Terminal                |
+| `mod` + `Ctrl` + `f`              | Thunar                             |
+| `mod` + `f`                       | Ranger (Terminal File Explorer)    |
+| `mod` + `k`                       | Krusader (Advanced File Explorer)  |
+| `mod` + `m`                       | Rofi Menu                          |
+| `mod` + `delete`                  | System Shutdown                    |
+| `mod` + `delete`                  | Visual Studio Code                 |
+| `mod` + `a`                       | Anaconda Navigator                 |
+| `mod` + `Ctrl` + `p`              | Spotify                            |
+| `mod` + `shift` + r               | Rhythmbox                          |
+| `mod` + `Ctrl` + `b`              | Bookworm                           |
+| `mod` + `t`                       | Thunderbird                        |
+| `mod` + `Ctrl` + `b`              | Firefox                            |
+| `mod` + `b`                       | Thorium                            |
+| `mod` + `control` + `b`           | Brave                              |
+| `mod` + `s`                       | Stacer                             |
+| `mod` + `Ctrl` + `c`              | Qtile Configuration File(Sublime)  |
+| `mod` + `o`                       | Obsidian                           |
+| `mod` + `l`                       | Lunacy                             |
+| `mod` + `shift` + `s`             | Settings(Cinnamon)                 |
+| `mod` + `shift` + `s`             | Settings(XFCE)                     |
+| `mod` + `g`                       | GIMP                               |
+| `mod` + `control` + `;`           | CAVA                               |
+| `mod` + `control` + `k`           | Kazam (Screenshot and Recording)   |
+| `mod` + `;`                       | Screenshot(gnome-screenshot)       |
+
+## Brightness
+
+These shortcuts rely on the `systemctl` brightness control package.
+
+| Command                           | Description                        |
+|:---|:---|
+| `mod` + `shift` + `a`             | Brightness 10%                     |
+| `mod` + `shift` + `b`             | Brightness 20%                     |
+| `mod` + `shift` + `c`             | Brightness 30%                     |
+| `mod` + `shift` + `d`             | Brightness 40%                     |
+| `mod` + `shift` + `e`             | Brightness 50%                     |
+| `mod` + `shift` + `f`             | Brightness 60%                     |
+| `mod` + `shift` + `g`             | Brightness 70%                     |
+| `mod` + `shift` + `h`             | Brightness 80%                     |
+| `mod` + `shift` + `i`             | Brightness 90%                     |
+| `mod` + `shift` + `j`             | Brightness 100%                    |
+
+## Layout
+
+| Command                           | Description                        |
+|:---|:---|
+| `mod` + `z`                       | Makes a window fullscreen          |
+| `mod` + `left`                    | Switch to window on the left       |
+| `mod` + `right`                   | Switch to window on the right      |
+| `mod` + `up`                      | Switch to window above             |
+| `mod` + `down`                    | Switch to window below             |
+
+## Switch Focus
+
+| Command                           | Description                        |
+|:---|:---|
+| `mod` + `i`                       | Switch to screen 0                 |
+| `mod` + `o`                       | Switch to screen 1                 |
+
+## Focus Monitor
+
+| Command                           | Description                        |
+|:---|:---|
+| `mod` + `,`                       | Previous Screen                    |
+| `mod` + `.`                       | Next Screen                        |
