@@ -1,5 +1,10 @@
 {
   "index": "Introduction",
+  "home": {
+    "title": "Home",
+    "type": "page",
+    "href": "/"
+  },
   "about": {
     "title": "About",
     "type": "page"
@@ -10,7 +15,11 @@
     "href": "https://info.stormylinux@gmail.com",
     "newWindow": true
   },
+  "arch": "Why Arch?",
+  "debian": "Why Debian?",
   "stormylinux-v1": "Stormy Linux v1.0",
+  "stormylinux-base": "Stormy Linux Base",
   "stormylinux-dev": "Stormy Linux Dev",
-  "stormylinux-pro": "Stormy Linux Pro"
+  "stormylinux-pro": "Stormy Linux Pro",
+  "installation": "Installation"
 }

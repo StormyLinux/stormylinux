@@ -29,9 +29,9 @@ const config: DocsThemeConfig = {
   project: {
     link: 'https://github.com/stormylinux',
   },
-  chat: {
-    link: 'https://discord.gg/stormylinux',
-  },
+  // chat: {
+  //   link: 'https://discord.gg/stormylinux',
+  // },
   docsRepositoryBase: 'https://github.com/stormylinux',
   gitTimestamp: <></>,
   main: ({ children }) => <div style={{ maxWidth: 1024, margin: '0 auto' }}>{children}</div>,
