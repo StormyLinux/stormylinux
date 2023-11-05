@@ -1,0 +1,38 @@
+# Install Stormy Linux on Arch
+
+## Getting Started
+
+To install Stormy Linux, we must first install Arch Linux.
+
+> **Note**: Stormy Linux can be installed on any Arch based distribution, to get started quickly, you can install Manjaro instead.
+
+Follow the steps below to get started with **Stormy Linux**.
+
+- **Step 1** : Install Arch Linux or Manjaro.
+- **Step 2** : Install the Qtile window manager.
+- **Step 3** : Install all the required applications.
+- **Step 4** : Install the `JetbrainsMono` Nerd Font.
+- **Step 5** : Make a backup of your Qtile configuration.
+- **Step 6** : Clone or purchase the Stormy Linux dotfiles and replace the default config files.
+
+## Flashing a USB
+
+You can flash an image with **dd** on **Linux** using the below methods:
+
+**Using dd**
+
+```bash
+sudo dd if=/PATH_TO_DEVICE of=~/PATH_TO_ISO status=progress
+```
+
+**Example**
+
+```bash
+sudo dd if=/dev/sdb of=~/StormyLinux/Downloads/Debian-12-Stable.iso status=progress
+```
+
+> Note: Balena Etcher is a great alternative to dd when flashing iso's to usb devices. Get balena etcher [here](https://etcher.balena.io). Windows users can leverage Rufus to flash usb devices. You can download rufus [here](https://rufus.ie/en)
+
+After the iso has been flashed onto a USB, reboot your system and boot into the USB. Run the Arch or Manjaro installation.
+
+After the Installation is complete, it's time to install what we need to get started with **Stormy Linux**.

@@ -1,5 +1,7 @@
 {
     "overview": "Installation Overview",
+    "debian-install": "Debian Install",
+    "arch-install": "Arch Install",
     "stormy-linux-setup": "Stormy Linux Setup",
     "the-qtile-w-m": "The Qtile WM",
     "applications": "Applications",

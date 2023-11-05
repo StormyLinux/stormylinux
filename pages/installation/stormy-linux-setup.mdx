@@ -2,11 +2,11 @@
 import Image from "next/image";
 import qtile from "../../assets/soon.png";
 
-# Installing Stormy Linux Editions
+# Installing Stormy Linux
 
 Let's get started with the installation process.
 
-> **Note**: The Developer and Professional Editions are both paid versions, click [here](/stormylinux/purchase) to purchase the configuration files or installation ISOs. If you would like to use Stormy Linux Base(Free Version), click [here](/stormylinux-base).
+> **Note**: The Developer and Professional Editions are both paid versions, click [here](/stormylinux/purchase) to get started with purchasing the right configuration files or installation ISOs that are perfect for your needs. If you would like to use Stormy Linux Base(Free Version), click [here](/stormylinux-base).
 
 ## Get Started
 
@@ -23,7 +23,7 @@ Installing **Stormy Linux** is a fairly straigh forward process, find the instal
 ```bash
 
 cd stormy-linux-base-edition/
-mv * ~/.config/
+cp -r * ~/.config/
 ```
 
 You can also move the configuration files individually.
@@ -33,17 +33,17 @@ You can also move the configuration files individually.
 ```bash
 cd stormy-linux-base-edition
 mkdir ~/.local/share/fonts
-mv JetBrainsMono/ ~/.local/share/fonts
-mv qtile/ ~/.config
-mv alacritty/ ~/.config
-mv cava/ ~/.config
-mv dunst/ ~/.config
-mv kitty/ ~/.config
-mv neofetch/ ~/.config
-mv nvim/ ~/.config
-mv ranger/ ~/.config
-mv picom/ ~/.config
-mv rofi/ ~/.config
+cp -r JetBrainsMono/ ~/.local/share/fonts
+cp -r qtile/ ~/.config
+cp -r alacritty/ ~/.config
+cp -r cava/ ~/.config
+cp -r dunst/ ~/.config
+cp -r kitty/ ~/.config
+cp -r neofetch/ ~/.config
+cp -r nvim/ ~/.config
+cp -r ranger/ ~/.config
+cp -r picom/ ~/.config
+cp -r rofi/ ~/.config
 ```
 
 4. Install all required applicatoins, click [here](/installation/applications) to see the list of applications.
