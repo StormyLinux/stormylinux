@@ -1,3 +1,10 @@
+import Image from "next/image";
+import ac from "../../assets/dev/active-colors.png";
+import ic from "../../assets/dev/visible-workspaces.png";
+import si from "../../assets/dev/system-indicators.png";
+import systray from "../../assets/dev/systray.png";
+import llrs from "../../assets/dev/llrs.png";
+
 # Dev Edition Status Bar
 
 Let's take a quick look at the Stormy Linux Developer Edition Status Bar. 
@@ -6,7 +13,7 @@ Let's take a quick look at the Stormy Linux Developer Edition Status Bar.
 
 The status bar used in **Stormy Linux Developer Edition** is the default Qtile status bar. Built in widgets are what is being leveraged in combination with the JetBrainsMono Nerd Font to display the icons. All system processes that are being used in the status bar are default widgets pulled from qtile.
 
-> **Note**: A package called **Qtile Extras** is being used in a pop-up menu with the purposes of performing three tasks, **logout**, **reboot** and **shutdown**.
+> **Note**: A package called **Qtile Extras** is being used in a pop-up menu with the purposes of performing three tasks, **logout**, **reboot** and **shutdown**. This popup is deactivated by default, you can uncomment them in the configuration file after installing qtile-extras. A walkthrough will be provided in the Dev Edition.
 
 ## The Menu
 
@@ -14,7 +21,7 @@ Stormy Linux Menu
 
 ### Rofi
 
-The default applications menu for **Stormy Linux** is **Rofi**. By clicking the **Stormy Linux Logo** at the top left corner in the status bar, the **Rofi** menu will pop up in the middle of your screen where you can access all your applications and more.
+The default applications menu for **Stormy Linux** is **Rofi**. By clicking the **Stormy Linux Logo** at the top left corner in the status bar, or using the `super` + `space` key combination, the **Rofi** menu will pop up in the middle of your screen where you can access your applications and more.
 
 ## Workspace Icons
 
@@ -22,38 +29,46 @@ The default applications menu for **Stormy Linux** is **Rofi**. By clicking the 
 
 Workspace icons are all hidden by default, except for the **"Home"** icon when loggin into the system, other workspaces can easily be accessed with a simple key combination. There are a total of **16** available workspaces for you to leverage, and each workspace has a purpose, see the list below.
 
-All acive workspaces are displayed on the top left corner of the status bar, right next to the **Stormy Linux** logo.
+All acive workspaces are displayed at the top left corner of the status bar, next to the **Stormy Linux** logo.
 
 - Workspace 1: **Home** (Optional workspace)
 - Workspace 2: **VIM** (Programming text editor)
 - Workspace 3: **VSCode** (A feature-rich IDE)
 - Workspace 4: **Browser**(Firefox, Brave, Chrome, etc.)
-- Workspace 5: **Development Server**(Go, Python, NPM, PNPM, BUN server, etc)
-- Workspace 6: **Testing and Debugging**(Cypress, Chai, Jest, etc)
+- Workspace 5: **Development Server**(Go, Python, NPM, PNPM, BUN, etc)
+- Workspace 6: **Testing and Debugging**(Cypress, Chai, Jest, Vitest, etc)
 - Workspace 7: **GitHub**(WebUI or GitHub-Desktop)
 - Workspace 8: **UI/UX**(GIMP, Figma, Lunacy, etc.)
-- Workspace 9: **All purpose terminal**(Kitty, Terminator, Alacritty, Tilix, etch.)
+- Workspace 9: **All purpose terminal**(Kitty, Terminator, Alacritty, ST, etc.)
 - Workspace 10: **File Explorers**(Krusader, Caja, Thunar, Ranger, etc.)
 - Workspace 11: **Notes**(Notion, Obsidian, etc.)
 - Workspace 12: **EMail**(Protonmail, Thunderbird, GMail, etc.)
-- Workspace 13: **Spotify** (Spotify App for your favorite music)
-- Workspace 14: **VLC** (For Videos or Music)
-- Workspace 15: **Settings**(system settings, config file, etc.)
-- Workspace 16: **Games** (PC games of your choosing)
+- Workspace 13: **Spotify** (Spotify App for podcasts)
+- Workspace 14: **VLC** (For Videos)
+- Workspace 15: **Settings**(system settings, configurations, etc.)
+- Workspace 16: **Games** (PC games)
 
 ### Inactive Workspaces
 
-Inactive workspaces are all hidden. These workspaces only become active when you navigate to them or when you open an application in any of the hidden workspaces. Some auto-assigned applications like **Kitty** will automatically activate a workspaces once the app is running.
+Inactive workspaces are all hidden. These workspaces only become active when you navigate to them or when you open an application in any of the hidden workspaces. Some auto-assigned applications like **Kitty** will automatically activate a workspace once the app is running.
 
 ## Workspace Colors
 
-**Active**
+**Active Colors**
 
-Active workspaces have a green highlighted icon when an application is active in that workspace, when you select and navigate to that workspace it will have an active "rose" like pink-ish foreground color and an active bottom border with a blue accent color.
+Active workspaces have a green highlighted icon when an application is active in that workspace, when you select and navigate to that workspace it will have an active light "rose" like pink-ish foreground color and an active bottom border with a blue accent color.
 
-**Inactive**
+Example:
 
-These are the workspaces with no activity, these are the icons that are hidden, and can be accessed by navigating to them.
+<Image src={ac} alt="active colors"/>
+
+**Inactive Colors**
+
+These are the workspaces with no activity, these are the icons that are hidden by default, but they can also be set to "visible" if you would like to see all your workspaces. These icons will then have a "light-gray" color if they have no applications running.
+
+Example:
+
+<Image src={ic} alt="inactive colors"/>
 
 ## Indicators
 
@@ -72,9 +87,47 @@ We now have the indicators, see below...
 4. **Battery** - Battery percentage indicator.
 5. **RAM** - Shows RAM usage.
 6. **Date** - Displays current date.
-7. **Time** - Shows current time. 
+7. **Time** - Shows current time.
+
+Example:
+
+<Image src={si} alt="system indicators"/>
+
 
 ### System Tray
 
 1. **Active Monitor** - This indicates which monitor is active and which is inactive.
 2. **Application Icons** - These are icons that appear next to the monitor icon whenever an application is open that is sent to the system tray, eg, VLC.
+
+Example:
+
+<Image src={systray} alt="system tray"/>
+
+## Lock, Logout, Reboot and Shutdown
+
+These icons represent the lock, logout, reboot and shutdown functionalities. When clicking on any of these icons, click events will be activated and will perform a specific action assigned to that specific icon.
+
+Example:
+
+<Image src={llrs} alt="LLRS"/>
+
+
+### Lock
+
+The lock icon has a light blue accent and can be used to lock your system. This action uses **physlock** to lock the machine. By clicking the lock icon your system will immediately lock, assuming you have physlock installed.
+
+### Logout
+
+The logout icon has a yellow color that logs out of your current session when clicked. This action performs a shutdown of your current environment and lgos you out of your system.
+
+### Reboot
+
+This icon has an orange accent and will reboot your entire system when clicked.
+
+### Shutdown
+
+The shutdown icon has a strong red accent color and will immediately shutdown your system when clicked.
+
+
+
+Exercise caution when clicking any of these icons, as they are designed to immediately perform their corresponding actions when clicked without warning.

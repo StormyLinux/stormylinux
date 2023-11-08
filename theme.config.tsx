@@ -1,7 +1,7 @@
 import { DocsThemeConfig } from 'nextra-theme-docs';
 import { useRouter } from 'next/router';
-import { StormyLinuxLogo } from './components/Icons';
-import stormyLinuxLogo from "../assets/stormylinux-logo.png"
+import { LightIcon, StormyLinuxLogo } from './components/Icons';
+// import stormyLinuxLogo from "../assets/stormylinux-logo.png"
 
 
 const config: DocsThemeConfig = {
