@@ -1,41 +1,45 @@
 import { Tab, Tabs } from "nextra-theme-docs";
+import Image from "next/image";
+import soon from "../../assets/soon.png";
 
-# Overview Pro Edition
+# Pro Edition Overview
+
+A quick overview of Stormy Linux Pro Edition.
 
 ## Stormy Linux Pro Edition
 
-Coming soon...
+The Pro Edition of Stormy Linux features a fast and highly customizable window manager with a configuration that focus' on speed, efficiency and comfort while providing a minimal and highly customizable work environment.
 
-## URL
+## Example:
 
-```bash copy
-https://stormylinux.netlify.app
-```
+<Image src={soon} alt="Stormy Linux Pro" />
 
-## Example Code Demo
 
-<Tabs items={["Golang", "Python"]}>
+## Stormy Linux Installation Guide
+
+The installation guides provided below have been tested on Arch Linux, Manjaro, Debian 12 and Linux Mint(Debian Edition). The Stormy Linux Pro Edition installation should work on any other Arch or Debain based distributions if everything is set up properly.
+
+<Tabs items={["Arch", "Debian"]}>
   <Tab>
     <>
-        ```go
-        package main
+      ### Stormy Linux on Arch
 
-        import "log"
+      An installation guide for Stormy Linux Pro on Arch can be found by clicking [here](/installation/arch-install) or follow the PDF instructions below.
 
-        func main() {
-          log.Println("Stormy Linux Pro Edition")
-        }
+        ```bash copy
+        curl https://stormylinux.netlify.app/installation/guide/stormylinux-arch.pdf
         ```
     </>
 
   </Tab>
   <Tab>
     <>
-        ```python
-        def stormy_linux():
-          print("Stormy Linux Pro Edition")
+      ### Stormy Linux on Debian
 
-        stormy_linux()
+      Install Stormy Linux Pro on Debian with the installation instructions provided [here](/installation/debian-install) or follow the PDF instructions below.
+
+        ```bash copy
+        curl https://stormylinux.netlify.app/installation/guide/stormylinux-debian.pdf
         ```
     </>
 

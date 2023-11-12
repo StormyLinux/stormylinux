@@ -18,7 +18,7 @@
   "arch": "Why Arch?",
   "debian": "Why Debian?",
   "stormylinux-v1": "Stormy Linux v1.0",
-  "stormylinux-base": "Stormy Linux Base",
+  "stormylinux-kickstart": "Stormy Linux Kickstart",
   "stormylinux-dev": "Stormy Linux Dev",
   "stormylinux-pro": "Stormy Linux Pro",
   "installation": "Installation"

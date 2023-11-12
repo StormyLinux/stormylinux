@@ -33,13 +33,13 @@ You can flash an image quickly on Linux using the below methods:
 **Using dd**
 
 ```bash
-sudo dd if=/PATH_TO_DEVICE of=~/PATH_TO_ISO status=progress
+sudo dd if=~/PATH_TO_ISO of=/PATH_TO_DEVICE bs=1M ; echo $? status=progress
 ```
 
 **Example**
 
 ```bash
-sudo dd if=/dev/sdb of=~/StormyLinux/Downloads/Debian-12-Stable.iso status=progress
+sudo dd if=~/StormyLinux/Downloads/Debian-12-Stable.iso of=/dev/sdb bs=1M ; echo $? status=progress
 ```
 
 > Note: Balena Etcher is a great alternative to dd when flashing iso's to usb devices. Get balena etcher [here](https://etcher.balena.io). Windows users can leverage Rufus to flash usb devices. You can download rufus [here](https://rufus.ie/en)
