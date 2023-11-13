@@ -1,7 +1,7 @@
 {
   "index": "Introduction",
-  "home": {
-    "title": "Home",
+  "docs": {
+    "title": "Docs",
     "type": "page",
     "href": "/"
   },
